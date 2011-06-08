@@ -1,0 +1,21 @@
+<projectDescription>
+  <name>org.compass-project.compass [2.2.0]</name>
+  <comment>Simple OSGi wrapper around third-party jar(s)</comment>
+  <projects/>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>org.eclipse.pde.ManifestBuilder</name>
+    </buildCommand>
+    <buildCommand>
+      <name>org.eclipse.pde.SchemaBuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+    <nature>org.eclipse.pde.PluginNature</nature>
+  </natures>
+  <linkedResources/>
+</projectDescription>

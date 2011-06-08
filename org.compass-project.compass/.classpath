@@ -1,0 +1,9 @@
+<classpath>
+  <classpathentry path="target/classes" kind="output"/>
+  <classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+  <classpathentry path="org.eclipse.pde.core.requiredPlugins" kind="con"/>
+  <classpathentry path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" kind="var"/>
+  <classpathentry path="M2_REPO/org/compass-project/compass/2.2.0/compass-2.2.0.jar" kind="var"/>
+  <classpathentry path="M2_REPO/org/apache/lucene/lucene-core/2.4.1/lucene-core-2.4.1.jar" kind="var"/>
+  <classpathentry path="target/pax-eclipse" exported="true" kind="lib"/>
+</classpath>

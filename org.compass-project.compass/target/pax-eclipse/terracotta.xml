@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-fragment>
+    <instrumented-classes>
+        <include>
+            <class-expression>org.compass.needle.terracotta.*</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.compass.needle.terracotta.transaction.processor.*</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.compass.core.lucene.engine.transaction.support.*</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.apache.lucene.store.Directory</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.apache.lucene.store.LockFactory</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.compass.core.lucene.engine.transaction.support.job.*</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.compass.core.spi.ResourceKey</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.compass.core.lucene.LuceneResource</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.compass.core.lucene.LuceneProperty</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.apache.lucene.document.Field</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.apache.lucene.document.AbstractField</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+        <include>
+            <class-expression>org.apache.lucene.search.*</class-expression>
+            <honor-transient>true</honor-transient>
+        </include>
+    </instrumented-classes>
+
+    <locks>
+        <autolock>
+            <method-expression>* org.compass.needle.terracotta.*.*(..)</method-expression>
+            <lock-level>write</lock-level>
+        </autolock>
+        <autolock>
+            <method-expression>* org.compass.needle.terracotta.*.get*(..)</method-expression>
+            <lock-level>read</lock-level>
+        </autolock>
+    </locks>
+
+    <roots>
+        <root>
+            <field-name>org.compass.needle.terracotta.TerracottaDirectoryStore.dirs</field-name>
+        </root>
+        <root>
+            <field-name>org.compass.needle.terracotta.TerracottaDirectoryStore.managedRWL</field-name>
+        </root>
+        <root>
+            <field-name>org.compass.needle.terracotta.TerracottaLockFactoryProvider.lockFactories</field-name>
+        </root>
+        <root>
+            <field-name>org.compass.needle.terracotta.TerracottaManagerUtilLockFactoryProvider.lockFactories</field-name>
+        </root>
+        <root>
+            <field-name>org.compass.needle.terracotta.transaction.processor.TerracottaTransactionProcessorFactory.holder</field-name>
+        </root>
+        <root>
+            <field-name>org.compass.core.lucene.engine.transaction.support.orderLocks</field-name>
+        </root>
+    </roots>
+</xml-fragment>

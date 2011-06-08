@@ -1,0 +1,26 @@
+!SESSION 2011-06-08 20:49:38.699 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=pl_PL
+Command-line arguments:  -console -configuration equinox
+
+!ENTRY com.dudewheresmyjar.domain 4 0 2011-06-08 20:49:39.477
+!MESSAGE 
+!STACK 0
+org.osgi.framework.BundleException: The bundle "com.dudewheresmyjar.domain_1.0.0.SNAPSHOT [1]" could not be resolved. Reason: Missing Constraint: Import-Package: org.compass.annotations; version="0.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1301)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:319)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:374)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1067)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:561)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:546)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:459)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:440)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:227)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:337)
+
+!ENTRY org.eclipse.osgi 4 0 2011-06-08 20:49:39.483
+!MESSAGE Bundle initial@reference:file:../bundles/com.dudewheresmyjar.domain_1.0.0.SNAPSHOT.jar/ was not resolved.
