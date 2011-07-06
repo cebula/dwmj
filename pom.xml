@@ -22,6 +22,7 @@
     <module>provision</module>
     <module>domain</module>
     <module>org.compass-project.compass</module>
+    <module>index</module>
   </modules>
 
   <build>

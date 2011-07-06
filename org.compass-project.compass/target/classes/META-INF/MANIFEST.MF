@@ -29,15 +29,15 @@ Export-Package: org.compass.core.engine.spellcheck;uses:="org.compass.
  uses:="org.compass.core.converter",org.compass.core.executor.commonj;
  uses:="javax.naming,org.compass.core,org.apache.commons.logging,commo
  nj.work,org.compass.core.config,org.compass.core.jndi,org.compass.cor
- e.executor.spi",org.compass.gps.device.hibernate.dep;uses:="org.compa
- ss.core,org.apache.commons.logging,org.hibernate.persister.entity,org
- .hibernate.cfg,org.compass.gps,org.compass.core.marshall,org.compass.
- gps.device.hibernate,org.hibernate.event,org.hibernate.classic,org.co
- mpass.gps.spi,org.compass.core.engine.subindex,org.compass.core.mappi
- ng,org.hibernate.metadata,org.compass.core.config,org.hibernate,org.c
- ompass.core.spi,org.compass.core.util,org.hibernate.impl,org.compass.
- gps.device.support.parallel",org.compass.core.json.impl;uses:="org.co
- mpass.core.util,org.compass.core.json",org.compass.core.json;uses:="o
+ e.executor.spi",org.compass.core.json.impl;uses:="org.compass.core.ut
+ il,org.compass.core.json",org.compass.gps.device.hibernate.dep;uses:=
+ "org.compass.core,org.apache.commons.logging,org.hibernate.persister.
+ entity,org.hibernate.cfg,org.compass.gps,org.compass.core.marshall,or
+ g.compass.gps.device.hibernate,org.hibernate.event,org.hibernate.clas
+ sic,org.compass.gps.spi,org.compass.core.engine.subindex,org.compass.
+ core.mapping,org.hibernate.metadata,org.compass.core.config,org.hiber
+ nate,org.compass.core.spi,org.compass.core.util,org.hibernate.impl,or
+ g.compass.gps.device.support.parallel",org.compass.core.json;uses:="o
  rg.compass.core.spi",org.compass.gps.device.hibernate.entities;uses:=
  "org.apache.commons.logging,org.hibernate.persister.entity,org.compas
  s.gps,org.compass.gps.device.hibernate,org.compass.gps.spi,org.compas
@@ -672,9 +672,9 @@ Export-Package: org.compass.core.engine.spellcheck;uses:="org.compass.
  tor,org.compass.core.mapping,org.compass.core.config,oracle.toplink.e
  ssentials.internal.sessions,org.compass.core.util,oracle.toplink.esse
  ntials.threetier,oracle.toplink.essentials.sessions,javax.persistence
- .spi,javax.persistence",org.compass.annotations,org.compass.core.engi
- ne.spi;uses:="org.compass.core.transaction.context,org.compass.core.e
- ngine",org.compass.core.xml.jdom;uses:="org.compass.core.xml,org.comp
+ .spi,javax.persistence",org.compass.core.engine.spi;uses:="org.compas
+ s.core.transaction.context,org.compass.core.engine",org.compass.annot
+ ations,org.compass.core.xml.jdom;uses:="org.compass.core.xml,org.comp
  ass.core.converter,org.jdom,org.jdom.xpath",org.apache.lucene.store.j
  dbc.lock;uses:="org.apache.commons.logging,org.apache.lucene.store,or
  g.apache.lucene.store.jdbc.support,org.apache.lucene.store.jdbc.diale
@@ -724,13 +724,13 @@ Export-Package: org.compass.core.engine.spellcheck;uses:="org.compass.
  lucene.store,org.apache.lucene.document,org.apache.lucene.search,org.
  apache.lucene.index,org.apache.lucene.analysis"
 Private-Package: !*
-Built-By: Kornel
+Built-By: Piotr
 Tool: Bnd-0.0.255
 Bundle-Name: org.compass-project.compass 2.2.0 [osgi]
 Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_16
+Build-Jdk: 1.6.0_25
 Bundle-Version: 2.2.0
-Bnd-LastModified: 1307560340679
+Bnd-LastModified: 1309974337088
 Bundle-ManifestVersion: 2
 Bundle-Description: Simple OSGi wrapper around third-party jar(s)
 Import-Package: com.gigaspaces.datasource;resolution:=optional,com.gig

@@ -2,13 +2,13 @@ Manifest-Version: 1.0
 Export-Package: dwmj.domain;uses:="org.compass.annotations";version="1
  .0.0.SNAPSHOT"
 Private-Package: dwmj.domain.internal.*
-Built-By: Kornel
+Built-By: Piotr
 Tool: Bnd-0.0.255
 Bundle-Name: com.dudewheresmyjar.domain [dwmj.domain]
 Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_16
+Build-Jdk: 1.6.0_25
 Bundle-Version: 1.0.0.SNAPSHOT
-Bnd-LastModified: 1307560338636
+Bnd-LastModified: 1309974359323
 Bundle-ManifestVersion: 2
 Bundle-Description: Generated using Pax-Construct
 Import-Package: dwmj.domain;version="1.0.0.SNAPSHOT",org.compass.annot
